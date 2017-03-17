@@ -21,6 +21,7 @@
 		925AA2ED1E7BDC3400104275 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2EA1E7BDC3400104275 /* EmoticonPackage.swift */; };
 		925AA2F01E7BDE4900104275 /* EmioticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2EF1E7BDE4900104275 /* EmioticonViewCell.swift */; };
 		925AA2F21E7BEB6300104275 /* EmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2F11E7BEB6300104275 /* EmoticonAttachment.swift */; };
+		92A698131E7BFC6500E7C322 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A698121E7BFC6500E7C322 /* UITextView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		925AA2EA1E7BDC3400104275 /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
 		925AA2EF1E7BDE4900104275 /* EmioticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmioticonViewCell.swift; sourceTree = "<group>"; };
 		925AA2F11E7BEB6300104275 /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
+		92A698121E7BFC6500E7C322 /* UITextView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +145,9 @@
 		925AA2E11E7BDA8200104275 /* Emoticon */ = {
 			isa = PBXGroup;
 			children = (
-				925AA2EE1E7BDE3300104275 /* View */,
+				92A698111E7BFC6500E7C322 /* Category */,
 				925AA2E51E7BDC0D00104275 /* Emoticons.bundle */,
+				925AA2EE1E7BDE3300104275 /* View */,
 				925AA2E71E7BDC3400104275 /* Model */,
 				925AA2E21E7BDACA00104275 /* Controller */,
 			);
@@ -177,6 +180,14 @@
 				925AA2EF1E7BDE4900104275 /* EmioticonViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		92A698111E7BFC6500E7C322 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				92A698121E7BFC6500E7C322 /* UITextView+Extension.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +327,7 @@
 				925AA2F21E7BEB6300104275 /* EmoticonAttachment.swift in Sources */,
 				925AA2ED1E7BDC3400104275 /* EmoticonPackage.swift in Sources */,
 				925AA2EC1E7BDC3400104275 /* EmoticonManager.swift in Sources */,
+				92A698131E7BFC6500E7C322 /* UITextView+Extension.swift in Sources */,
 				925AA2E41E7BDAE700104275 /* EmoticonController.swift in Sources */,
 				925AA2EB1E7BDC3400104275 /* Emoticon.swift in Sources */,
 				925AA2F01E7BDE4900104275 /* EmioticonViewCell.swift in Sources */,
