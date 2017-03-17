@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		925AA2B41E7B9B5500104275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2B31E7B9B5500104275 /* AppDelegate.swift */; };
+		925AA2B61E7B9B5500104275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2B51E7B9B5500104275 /* ViewController.swift */; };
+		925AA2B91E7B9B5500104275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925AA2B71E7B9B5500104275 /* Main.storyboard */; };
+		925AA2BB1E7B9B5500104275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925AA2BA1E7B9B5500104275 /* Assets.xcassets */; };
+		925AA2BE1E7B9B5500104275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925AA2BC1E7B9B5500104275 /* LaunchScreen.storyboard */; };
+		925AA2C91E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2C81E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.swift */; };
+		925AA2D41E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2D31E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		925AA2C51E7B9B5500104275 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 925AA2A81E7B9B5500104275 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 925AA2AF1E7B9B5500104275;
+			remoteInfo = SLEmoticonKeyboardExample;
+		};
+		925AA2D01E7B9B5500104275 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 925AA2A81E7B9B5500104275 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 925AA2AF1E7B9B5500104275;
+			remoteInfo = SLEmoticonKeyboardExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		925AA2B01E7B9B5500104275 /* SLEmoticonKeyboardExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLEmoticonKeyboardExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		925AA2B31E7B9B5500104275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		925AA2B51E7B9B5500104275 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		925AA2B81E7B9B5500104275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		925AA2BA1E7B9B5500104275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		925AA2BD1E7B9B5500104275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		925AA2BF1E7B9B5500104275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925AA2C41E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLEmoticonKeyboardExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		925AA2C81E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLEmoticonKeyboardExampleTests.swift; sourceTree = "<group>"; };
+		925AA2CA1E7B9B5500104275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925AA2CF1E7B9B5500104275 /* SLEmoticonKeyboardExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLEmoticonKeyboardExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		925AA2D31E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLEmoticonKeyboardExampleUITests.swift; sourceTree = "<group>"; };
+		925AA2D51E7B9B5600104275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		925AA2AD1E7B9B5500104275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925AA2C11E7B9B5500104275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925AA2CC1E7B9B5500104275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		925AA2A71E7B9B5500104275 = {
+			isa = PBXGroup;
+			children = (
+				925AA2B21E7B9B5500104275 /* SLEmoticonKeyboardExample */,
+				925AA2C71E7B9B5500104275 /* SLEmoticonKeyboardExampleTests */,
+				925AA2D21E7B9B5500104275 /* SLEmoticonKeyboardExampleUITests */,
+				925AA2B11E7B9B5500104275 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		925AA2B11E7B9B5500104275 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				925AA2B01E7B9B5500104275 /* SLEmoticonKeyboardExample.app */,
+				925AA2C41E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.xctest */,
+				925AA2CF1E7B9B5500104275 /* SLEmoticonKeyboardExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		925AA2B21E7B9B5500104275 /* SLEmoticonKeyboardExample */ = {
+			isa = PBXGroup;
+			children = (
+				925AA2B31E7B9B5500104275 /* AppDelegate.swift */,
+				925AA2B51E7B9B5500104275 /* ViewController.swift */,
+				925AA2B71E7B9B5500104275 /* Main.storyboard */,
+				925AA2BA1E7B9B5500104275 /* Assets.xcassets */,
+				925AA2BC1E7B9B5500104275 /* LaunchScreen.storyboard */,
+				925AA2BF1E7B9B5500104275 /* Info.plist */,
+			);
+			path = SLEmoticonKeyboardExample;
+			sourceTree = "<group>";
+		};
+		925AA2C71E7B9B5500104275 /* SLEmoticonKeyboardExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				925AA2C81E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.swift */,
+				925AA2CA1E7B9B5500104275 /* Info.plist */,
+			);
+			path = SLEmoticonKeyboardExampleTests;
+			sourceTree = "<group>";
+		};
+		925AA2D21E7B9B5500104275 /* SLEmoticonKeyboardExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				925AA2D31E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift */,
+				925AA2D51E7B9B5600104275 /* Info.plist */,
+			);
+			path = SLEmoticonKeyboardExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		925AA2AF1E7B9B5500104275 /* SLEmoticonKeyboardExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 925AA2D81E7B9B5600104275 /* Build configuration list for PBXNativeTarget "SLEmoticonKeyboardExample" */;
+			buildPhases = (
+				925AA2AC1E7B9B5500104275 /* Sources */,
+				925AA2AD1E7B9B5500104275 /* Frameworks */,
+				925AA2AE1E7B9B5500104275 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLEmoticonKeyboardExample;
+			productName = SLEmoticonKeyboardExample;
+			productReference = 925AA2B01E7B9B5500104275 /* SLEmoticonKeyboardExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		925AA2C31E7B9B5500104275 /* SLEmoticonKeyboardExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 925AA2DB1E7B9B5600104275 /* Build configuration list for PBXNativeTarget "SLEmoticonKeyboardExampleTests" */;
+			buildPhases = (
+				925AA2C01E7B9B5500104275 /* Sources */,
+				925AA2C11E7B9B5500104275 /* Frameworks */,
+				925AA2C21E7B9B5500104275 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				925AA2C61E7B9B5500104275 /* PBXTargetDependency */,
+			);
+			name = SLEmoticonKeyboardExampleTests;
+			productName = SLEmoticonKeyboardExampleTests;
+			productReference = 925AA2C41E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		925AA2CE1E7B9B5500104275 /* SLEmoticonKeyboardExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 925AA2DE1E7B9B5600104275 /* Build configuration list for PBXNativeTarget "SLEmoticonKeyboardExampleUITests" */;
+			buildPhases = (
+				925AA2CB1E7B9B5500104275 /* Sources */,
+				925AA2CC1E7B9B5500104275 /* Frameworks */,
+				925AA2CD1E7B9B5500104275 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				925AA2D11E7B9B5500104275 /* PBXTargetDependency */,
+			);
+			name = SLEmoticonKeyboardExampleUITests;
+			productName = SLEmoticonKeyboardExampleUITests;
+			productReference = 925AA2CF1E7B9B5500104275 /* SLEmoticonKeyboardExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		925AA2A81E7B9B5500104275 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = SLZeng;
+				TargetAttributes = {
+					925AA2AF1E7B9B5500104275 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					925AA2C31E7B9B5500104275 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 925AA2AF1E7B9B5500104275;
+					};
+					925AA2CE1E7B9B5500104275 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 925AA2AF1E7B9B5500104275;
+					};
+				};
+			};
+			buildConfigurationList = 925AA2AB1E7B9B5500104275 /* Build configuration list for PBXProject "SLEmoticonKeyboardExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 925AA2A71E7B9B5500104275;
+			productRefGroup = 925AA2B11E7B9B5500104275 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				925AA2AF1E7B9B5500104275 /* SLEmoticonKeyboardExample */,
+				925AA2C31E7B9B5500104275 /* SLEmoticonKeyboardExampleTests */,
+				925AA2CE1E7B9B5500104275 /* SLEmoticonKeyboardExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		925AA2AE1E7B9B5500104275 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925AA2BE1E7B9B5500104275 /* LaunchScreen.storyboard in Resources */,
+				925AA2BB1E7B9B5500104275 /* Assets.xcassets in Resources */,
+				925AA2B91E7B9B5500104275 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925AA2C21E7B9B5500104275 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925AA2CD1E7B9B5500104275 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		925AA2AC1E7B9B5500104275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925AA2B61E7B9B5500104275 /* ViewController.swift in Sources */,
+				925AA2B41E7B9B5500104275 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925AA2C01E7B9B5500104275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925AA2C91E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925AA2CB1E7B9B5500104275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925AA2D41E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		925AA2C61E7B9B5500104275 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 925AA2AF1E7B9B5500104275 /* SLEmoticonKeyboardExample */;
+			targetProxy = 925AA2C51E7B9B5500104275 /* PBXContainerItemProxy */;
+		};
+		925AA2D11E7B9B5500104275 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 925AA2AF1E7B9B5500104275 /* SLEmoticonKeyboardExample */;
+			targetProxy = 925AA2D01E7B9B5500104275 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		925AA2B71E7B9B5500104275 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				925AA2B81E7B9B5500104275 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		925AA2BC1E7B9B5500104275 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				925AA2BD1E7B9B5500104275 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		925AA2D61E7B9B5600104275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		925AA2D71E7B9B5600104275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		925AA2D91E7B9B5600104275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SLEmoticonKeyboardExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CoderSLZeng.com.github.SLEmoticonKeyboardExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		925AA2DA1E7B9B5600104275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SLEmoticonKeyboardExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CoderSLZeng.com.github.SLEmoticonKeyboardExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		925AA2DC1E7B9B5600104275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SLEmoticonKeyboardExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CoderSLZeng.com.github.SLEmoticonKeyboardExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SLEmoticonKeyboardExample.app/SLEmoticonKeyboardExample";
+			};
+			name = Debug;
+		};
+		925AA2DD1E7B9B5600104275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SLEmoticonKeyboardExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CoderSLZeng.com.github.SLEmoticonKeyboardExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SLEmoticonKeyboardExample.app/SLEmoticonKeyboardExample";
+			};
+			name = Release;
+		};
+		925AA2DF1E7B9B5600104275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SLEmoticonKeyboardExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CoderSLZeng.com.github.SLEmoticonKeyboardExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SLEmoticonKeyboardExample;
+			};
+			name = Debug;
+		};
+		925AA2E01E7B9B5600104275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SLEmoticonKeyboardExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CoderSLZeng.com.github.SLEmoticonKeyboardExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SLEmoticonKeyboardExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		925AA2AB1E7B9B5500104275 /* Build configuration list for PBXProject "SLEmoticonKeyboardExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925AA2D61E7B9B5600104275 /* Debug */,
+				925AA2D71E7B9B5600104275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		925AA2D81E7B9B5600104275 /* Build configuration list for PBXNativeTarget "SLEmoticonKeyboardExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925AA2D91E7B9B5600104275 /* Debug */,
+				925AA2DA1E7B9B5600104275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		925AA2DB1E7B9B5600104275 /* Build configuration list for PBXNativeTarget "SLEmoticonKeyboardExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925AA2DC1E7B9B5600104275 /* Debug */,
+				925AA2DD1E7B9B5600104275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		925AA2DE1E7B9B5600104275 /* Build configuration list for PBXNativeTarget "SLEmoticonKeyboardExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925AA2DF1E7B9B5600104275 /* Debug */,
+				925AA2E01E7B9B5600104275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 925AA2A81E7B9B5500104275 /* Project object */;
+}
