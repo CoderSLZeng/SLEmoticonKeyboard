@@ -54,6 +54,7 @@ extension EmoticonController {
     private func prepareForCollectionView() {
         collectionView.registerClass(EmioticonViewCell.self, forCellWithReuseIdentifier: EmoticonCell)
         collectionView.dataSource = self
+        collectionView.delegate = self
     }
     
     private func prepareForToolBar() {
@@ -91,6 +92,7 @@ extension EmoticonController {
 }
 
 
+// MARK: - UICollectionViewDataSource
 extension EmoticonController : UICollectionViewDataSource {
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return manager.packages.count
@@ -116,6 +118,36 @@ extension EmoticonController : UICollectionViewDataSource {
     }
 }
 
+// MARK: - UICollectionViewDelegate
+extension EmoticonController: UICollectionViewDelegate {
+    /// 代理方法
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        // 1.取出点击的表情
+        let package = manager.packages[indexPath.section]
+        let emoticon = package.emoticons[indexPath.item]
+        
+        // 2.将点击的表情插入最近分组中
+        insertRecentlyEmoticon(emoticon)
+    }
+    
+    private func insertRecentlyEmoticon(emoticon : Emoticon) {
+        // 1.如果是空白表情或者删除按钮,不需要插入
+        if emoticon.isRemove || emoticon.isEmpty {
+            return
+        }
+        
+        // 2.删除一个表情
+        if manager.packages.first!.emoticons.contains(emoticon) { // 原来有该表情
+            let index = (manager.packages.first?.emoticons.indexOf(emoticon))!
+            manager.packages.first?.emoticons.removeAtIndex(index)
+        } else { // 原来没有这个表情
+            manager.packages.first?.emoticons.removeAtIndex(19)
+        }
+        
+        // 3.将emoticon插入最近分组中
+        manager.packages.first?.emoticons.insert(emoticon, atIndex: 0)
+    }
+}
 
 
 
