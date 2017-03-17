@@ -38,7 +38,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="0XQ-m5-bTf"/>
+                    <navigationItem key="navigationItem" id="0XQ-m5-bTf">
+                        <barButtonItem key="rightBarButtonItem" title="发送" id="HLe-Gf-arQ">
+                            <connections>
+                                <action selector="sendItemClick:" destination="BYZ-38-t0r" id="do6-C6-I45"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textView" destination="gfj-zO-stl" id="iBW-0a-kMN"/>
                     </connections>

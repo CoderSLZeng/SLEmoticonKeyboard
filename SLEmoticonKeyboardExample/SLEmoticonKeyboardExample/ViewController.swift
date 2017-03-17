@@ -88,5 +88,21 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func sendItemClick(sender: AnyObject) {
+        
+        // 1.获取属性字符串
+        let attrMStr = NSMutableAttributedString(attributedString: textView.attributedText)
+        
+        // 2.遍历属性字符串
+        let range = NSRange(location: 0, length: attrMStr.length)
+        attrMStr.enumerateAttributesInRange(range, options: []) { (dict, range, _) -> Void in
+            if let attachment = dict["NSAttachment"] as? EmoticonAttachment {
+                attrMStr.replaceCharactersInRange(range, withString: attachment.chs!)
+            }
+        }
+        
+        // 3.获取字符串
+        print(attrMStr.string)
+    }
 }
 
