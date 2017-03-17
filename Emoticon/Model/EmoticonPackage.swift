@@ -24,7 +24,11 @@ class EmoticonPackage: NSObject {
         let array = NSArray(contentsOfFile: plistPath)! as! [[String : String]]
         
         // 4.遍历数组
-        for dict in array {
+        for var dict in array {
+            if let png = dict["png"] {
+                dict["png"] = id + "/" + png
+            }
+            
             emoticons.append(Emoticon(dict: dict))
         }
     }
