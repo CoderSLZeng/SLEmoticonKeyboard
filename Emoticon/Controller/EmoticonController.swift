@@ -15,6 +15,7 @@ class EmoticonController: UIViewController {
     // MARK:- 懒加载属性
     private lazy var collectionView : UICollectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: EmoticonCollectionViewLayout())
     private lazy var toolBar : UIToolbar = UIToolbar()
+    private lazy var manager = EmoticonManager()
     
     // MARK:- 系统回调函数
     override func viewDidLoad() {
@@ -51,7 +52,7 @@ extension EmoticonController {
     }
     
     private func prepareForCollectionView() {
-        collectionView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: EmoticonCell)
+        collectionView.registerClass(EmioticonViewCell.self, forCellWithReuseIdentifier: EmoticonCell)
         collectionView.dataSource = self
     }
     
@@ -78,22 +79,38 @@ extension EmoticonController {
     }
     
     @objc private func itemClick(item : UIBarButtonItem) {
-        print(item.tag)
+        // 1.获取点击的item的tag
+        let tag = item.tag
+        
+        // 2.根据tag获取到当前组
+        let indexPath = NSIndexPath(forItem: 0, inSection: tag)
+        
+        // 3.滚动到对应的位置
+        collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .Left, animated: true)
     }
 }
 
 
 extension EmoticonController : UICollectionViewDataSource {
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return manager.packages.count
+    }
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 200
+        let package = manager.packages[section]
+        
+        return package.emoticons.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         // 1.创建cell
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(EmoticonCell, forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(EmoticonCell, forIndexPath: indexPath) as! EmioticonViewCell
         
         // 2.给cell设置数据
         cell.backgroundColor = indexPath.item % 2 == 0 ? UIColor.redColor() : UIColor.blueColor()
+        let package = manager.packages[indexPath.section]
+        let emoticon = package.emoticons[indexPath.item]
+        cell.emoticon = emoticon
         
         return cell
     }
