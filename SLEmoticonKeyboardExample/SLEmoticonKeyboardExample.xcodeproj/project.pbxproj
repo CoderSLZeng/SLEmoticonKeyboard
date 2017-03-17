@@ -14,6 +14,7 @@
 		925AA2BE1E7B9B5500104275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925AA2BC1E7B9B5500104275 /* LaunchScreen.storyboard */; };
 		925AA2C91E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2C81E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.swift */; };
 		925AA2D41E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2D31E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift */; };
+		925AA2E41E7BDAE700104275 /* EmoticonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2E31E7BDAE700104275 /* EmoticonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		925AA2CF1E7B9B5500104275 /* SLEmoticonKeyboardExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLEmoticonKeyboardExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		925AA2D31E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLEmoticonKeyboardExampleUITests.swift; sourceTree = "<group>"; };
 		925AA2D51E7B9B5600104275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925AA2E31E7BDAE700104275 /* EmoticonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		925AA2B21E7B9B5500104275 /* SLEmoticonKeyboardExample */ = {
 			isa = PBXGroup;
 			children = (
+				925AA2E11E7BDA8200104275 /* Emoticon */,
 				925AA2B31E7B9B5500104275 /* AppDelegate.swift */,
 				925AA2B51E7B9B5500104275 /* ViewController.swift */,
 				925AA2B71E7B9B5500104275 /* Main.storyboard */,
@@ -123,6 +126,23 @@
 				925AA2D51E7B9B5600104275 /* Info.plist */,
 			);
 			path = SLEmoticonKeyboardExampleUITests;
+			sourceTree = "<group>";
+		};
+		925AA2E11E7BDA8200104275 /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				925AA2E21E7BDACA00104275 /* Controller */,
+			);
+			name = Emoticon;
+			path = ../../Emoticon;
+			sourceTree = "<group>";
+		};
+		925AA2E21E7BDACA00104275 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				925AA2E31E7BDAE700104275 /* EmoticonController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +278,7 @@
 			files = (
 				925AA2B61E7B9B5500104275 /* ViewController.swift in Sources */,
 				925AA2B41E7B9B5500104275 /* AppDelegate.swift in Sources */,
+				925AA2E41E7BDAE700104275 /* EmoticonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

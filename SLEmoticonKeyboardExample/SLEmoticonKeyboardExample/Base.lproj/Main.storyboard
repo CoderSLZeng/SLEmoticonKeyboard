@@ -39,6 +39,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="0XQ-m5-bTf"/>
+                    <connections>
+                        <outlet property="textView" destination="gfj-zO-stl" id="iBW-0a-kMN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
