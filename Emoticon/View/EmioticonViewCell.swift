@@ -22,6 +22,11 @@ class EmioticonViewCell: UICollectionViewCell {
             // 1.设置emoticonBtn的内容
             emoticonBtn.setImage(UIImage(contentsOfFile: emoticon.pngPath ?? ""), forState: .Normal)
             emoticonBtn.setTitle(emoticon.emojiCode, forState: .Normal)
+            
+            // 2.设置删除按钮
+            if emoticon.isRemove {
+                emoticonBtn.setImage(UIImage(named: "compose_emotion_delete"), forState: .Normal)
+            }
         }
     }
     
@@ -31,7 +36,7 @@ class EmioticonViewCell: UICollectionViewCell {
         
         setupUI()
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
