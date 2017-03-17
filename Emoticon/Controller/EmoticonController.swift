@@ -11,11 +11,25 @@ import UIKit
 private let EmoticonCell = "EmoticonCell"
 
 class EmoticonController: UIViewController {
+    // MARK:- 定义属性
+    var emoticonCallBack : (emoticon : Emoticon) -> ()
     
     // MARK:- 懒加载属性
     private lazy var collectionView : UICollectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: EmoticonCollectionViewLayout())
     private lazy var toolBar : UIToolbar = UIToolbar()
     private lazy var manager = EmoticonManager()
+    
+    // MARK:- 自定义构造函数
+    init (emoticonCallBack : (emoticon : Emoticon) -> ()) {
+        
+        self.emoticonCallBack = emoticonCallBack
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK:- 系统回调函数
     override func viewDidLoad() {
@@ -109,7 +123,6 @@ extension EmoticonController : UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(EmoticonCell, forIndexPath: indexPath) as! EmioticonViewCell
         
         // 2.给cell设置数据
-        cell.backgroundColor = indexPath.item % 2 == 0 ? UIColor.redColor() : UIColor.blueColor()
         let package = manager.packages[indexPath.section]
         let emoticon = package.emoticons[indexPath.item]
         cell.emoticon = emoticon
@@ -128,6 +141,9 @@ extension EmoticonController: UICollectionViewDelegate {
         
         // 2.将点击的表情插入最近分组中
         insertRecentlyEmoticon(emoticon)
+        
+        // 3.将表情回调给外界控制器
+        emoticonCallBack(emoticon: emoticon)
     }
     
     private func insertRecentlyEmoticon(emoticon : Emoticon) {
