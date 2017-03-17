@@ -15,6 +15,10 @@
 		925AA2C91E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2C81E7B9B5500104275 /* SLEmoticonKeyboardExampleTests.swift */; };
 		925AA2D41E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2D31E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift */; };
 		925AA2E41E7BDAE700104275 /* EmoticonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2E31E7BDAE700104275 /* EmoticonController.swift */; };
+		925AA2E61E7BDC0D00104275 /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 925AA2E51E7BDC0D00104275 /* Emoticons.bundle */; };
+		925AA2EB1E7BDC3400104275 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2E81E7BDC3400104275 /* Emoticon.swift */; };
+		925AA2EC1E7BDC3400104275 /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2E91E7BDC3400104275 /* EmoticonManager.swift */; };
+		925AA2ED1E7BDC3400104275 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2EA1E7BDC3400104275 /* EmoticonPackage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		925AA2D31E7B9B5600104275 /* SLEmoticonKeyboardExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLEmoticonKeyboardExampleUITests.swift; sourceTree = "<group>"; };
 		925AA2D51E7B9B5600104275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		925AA2E31E7BDAE700104275 /* EmoticonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonController.swift; sourceTree = "<group>"; };
+		925AA2E51E7BDC0D00104275 /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
+		925AA2E81E7BDC3400104275 /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		925AA2E91E7BDC3400104275 /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
+		925AA2EA1E7BDC3400104275 /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,8 @@
 		925AA2E11E7BDA8200104275 /* Emoticon */ = {
 			isa = PBXGroup;
 			children = (
+				925AA2E71E7BDC3400104275 /* Model */,
+				925AA2E51E7BDC0D00104275 /* Emoticons.bundle */,
 				925AA2E21E7BDACA00104275 /* Controller */,
 			);
 			name = Emoticon;
@@ -143,6 +153,16 @@
 				925AA2E31E7BDAE700104275 /* EmoticonController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		925AA2E71E7BDC3400104275 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				925AA2E81E7BDC3400104275 /* Emoticon.swift */,
+				925AA2E91E7BDC3400104275 /* EmoticonManager.swift */,
+				925AA2EA1E7BDC3400104275 /* EmoticonPackage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				925AA2BE1E7B9B5500104275 /* LaunchScreen.storyboard in Resources */,
+				925AA2E61E7BDC0D00104275 /* Emoticons.bundle in Resources */,
 				925AA2BB1E7B9B5500104275 /* Assets.xcassets in Resources */,
 				925AA2B91E7B9B5500104275 /* Main.storyboard in Resources */,
 			);
@@ -278,7 +299,10 @@
 			files = (
 				925AA2B61E7B9B5500104275 /* ViewController.swift in Sources */,
 				925AA2B41E7B9B5500104275 /* AppDelegate.swift in Sources */,
+				925AA2ED1E7BDC3400104275 /* EmoticonPackage.swift in Sources */,
+				925AA2EC1E7BDC3400104275 /* EmoticonManager.swift in Sources */,
 				925AA2E41E7BDAE700104275 /* EmoticonController.swift in Sources */,
+				925AA2EB1E7BDC3400104275 /* Emoticon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

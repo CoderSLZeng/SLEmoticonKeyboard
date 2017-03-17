@@ -19,6 +19,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         textView.inputView = emoticonVc.view
+        
+        let manager = EmoticonManager()
+        
+        for package in manager.packages {
+            for emoticon in package.emoticons {
+                print(emoticon)
+            }
+        }
     }
 
     override func viewDidAppear(animated: Bool) {
